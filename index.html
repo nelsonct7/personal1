@@ -29,6 +29,8 @@
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
@@ -390,7 +392,7 @@
                 <div class="col-lg-12">
                     
                     <!-- Contact Form -->
-                    <form id="gForm" method="post" onsubmit="return validateForm()" action="https://script.google.com/macros/s/AKfycbwPorozZTwXhXGLaUsBMOk60pBW_zR8Sss8DkiSqBetihUBfuTX/exec">
+                    <form id="gForm">
                         <div class="form-group">
                             <input type="text" class="form-control-input" id="cname" name="name" onkeyup="validateName()">
                             <label class="label-control" for="cname" >Name</label>
@@ -407,7 +409,7 @@
                             <span id="message-error" > </span>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="form-control-submit-button" onclick="">Submit</button>
+                            <button type="submit" class="form-control-submit-button" onclick="return validateForm()">Submit</button>
                             <span id="submit-error"> </span>
                         </div>
                     </form>
