@@ -111,8 +111,10 @@ function validateEmail(){
         emailError.innerHTML = 'Email invalid'
         return false;
     }
+    else{
     emailError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
     return true;
+}
 }
 
 function validateMessage(){
@@ -138,7 +140,5 @@ function validateForm(){
         setTimeout(function(){submitError.style.display='none';},3000);
         return false;
     }
-    else{
-        return true;
-    }
+   
 }
