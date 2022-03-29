@@ -26,11 +26,9 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
@@ -392,7 +390,7 @@
                 <div class="col-lg-12">
                     
                     <!-- Contact Form -->
-                    <form id="gForm">
+                    <form id="gForm" >
                         <div class="form-group">
                             <input type="text" class="form-control-input" id="cname" name="name" onkeyup="validateName()">
                             <label class="label-control" for="cname" >Name</label>
@@ -476,13 +474,7 @@
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
+        
         
     </div> <!-- end of copyright --> 
     <!-- end of copyright -->
@@ -494,7 +486,7 @@
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
    
-  <script>
+ <script>
         $("#gForm").submit((e)=>{
             e.preventDefault()
             $.ajax({
